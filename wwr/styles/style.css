@@ -7,6 +7,7 @@ nav a {
     text-align: center;
     color: #1A404C;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1 {
@@ -17,7 +18,7 @@ nav a {
     text-align: center;
 }
 
-.buttion-box {
+.button-box {
     text-align: center;
 }
 
@@ -32,6 +33,10 @@ main section{
 
 body {
     background-color: #429fe2;
+    font-family: Arial, Helvetica, Verdana;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -44,15 +49,23 @@ nav a:hover {
 }
 
 .book {
-    background-color: #429fe2;
+    background-color: #86c4d0;
     color: #1A404C;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join {
-    background-color: #429fe2;
+    background-color: #86c4d0;
     color: #1A404C;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover {
@@ -67,14 +80,21 @@ nav a:hover {
 
 .msg {
     background-color: #429fe2;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #429fe2;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .home-title {
     color: #1A404C;
+    font-family: Georgia, Garamond, 'Times New Roman';
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -83,10 +103,13 @@ h4 {
 
 .msg h2 {
     color: #1A404C;
+    font-family: Georgia, Garamond, 'Times New Roman';
 }
 
 .msg p {
     color: #1A404C;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer h3 {
@@ -108,6 +131,7 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -116,4 +140,36 @@ footer a:hover {
 
 footer h3 a:hover {
     text-decoration: underline;
+}
+
+h2 {
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
+}
+
+main section img {
+    box-sizing: border-box;
 }
