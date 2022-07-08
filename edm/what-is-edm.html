@@ -37,21 +37,54 @@
         </div>
         <main class="what-grid">
             <div id="background"></div>
-            <img class="genres" src="images/genre.jpg" alt="Genres of EDM">
-            <section class="msg">
-                <h2>How genres are dinstinguished?</h2>
-                <p>The basic classification criterion is the drum beat that is applied to the song, 
-                    and the frame of a large genre is mostly changed according to the drum beat and BPM, 
-                    and the detailed genre differs according to various factors such as the sound source used and the music composition format.
-                    </p>
-                <p>
-                    Genres below 80 BPM include dubstep, trap, and future bass. 
-Genres between 80 and 120 BPM include house, trance, house, glitch hop, future bass, halftime drum and bass, and drumstep.
- Between 120 and 170 BPM are trance, house, hardstyle, and garage, 
-and above 170 BPM are hardcore techno, jungle, drum and bass.
-                </p>
-            </section>
+            <div class="tab">
+                <button class="tablinks" onmouseover="openCity(event, '80')">below 80 BPM</button>
+                <button class="tablinks" onmouseover="openCity(event, '80120')">between 80 and 120 BPM</button>
+                <button class="tablinks" onmouseover="openCity(event, '120170')">Between 120 and 170 BPM</button>
+                <button class="tablinks" onmouseover="openCity(event, '170')">above 170 BPM</button>
+              </div>
+              
+              <div id="80" class="tabcontent">
+                <h3>below 80 BPM</h3>
+                <p>Genres below 80 BPM include dubstep, trap, and future bass.</p>
+              </div>
+              
+              <div id="80120" class="tabcontent">
+                <h3>between 80 and 120 BPM</h3>
+                <p> Genres between 80 and 120 BPM include house, trance, house, glitch hop, future bass, halftime drum and bass, and drumstep.</p>
+              </div>
+              
+              <div id="120170" class="tabcontent">
+                <h3>Between 120 and 170 BPM</h3>
+                <p>Between 120 and 170 BPM are trance, house, hardstyle, and garage.</p>
+              </div>
+
+              <div id="170" class="tabcontent">
+                <h3>above 170 BPM</h3>
+                <p>above 170 BPM are hardcore techno, jungle, drum and bass.</p>
+              </div>
             <div id="background"></div>
+            <script>function openCity(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+              
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+              
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+              
+                // Show the current tab, and add an "active" class to the link that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }</script>
+            
         </main>
         <footer>
             <h3>EDM 101 &copy; 2022 - Byeongho Kim</h3>
