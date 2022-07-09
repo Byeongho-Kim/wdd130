@@ -21,7 +21,7 @@
                 <a href="famous-festivals">Famous Festivals</a>
             </nav>
         </header>
-        <h1>What Is EDM?</h1>
+        <h1 class="what-title">What Is EDM?</h1>
         <div id="what">
             <div id="what-box">
                 <img id="what-img" src="images/page2.jpg" alt="EDM image">
@@ -36,35 +36,36 @@
             </section>
         </div>
         <main class="what-grid">
-            <div id="background"></div>
-            <div class="tab">
-                <button class="tablinks" onmouseover="openCity(event, '80')">below 80 BPM</button>
-                <button class="tablinks" onmouseover="openCity(event, '80120')">between 80 and 120 BPM</button>
-                <button class="tablinks" onmouseover="openCity(event, '120170')">Between 120 and 170 BPM</button>
-                <button class="tablinks" onmouseover="openCity(event, '170')">above 170 BPM</button>
-              </div>
+            <img id="genres-img" src="images/genre.jpg" alt="EDM genres">
+            <section id="chart">
+                <div class="tab">
+                    <button class="tablinks" onmouseover="openCity(event, '80')">Below 80 BPM</button>
+                    <button class="tablinks" onmouseover="openCity(event, '80120')">Between 80 and 120 BPM</button>
+                    <button class="tablinks" onmouseover="openCity(event, '120170')">Between 120 and 170 BPM</button>
+                    <button class="tablinks" onmouseover="openCity(event, '170')">Above 170 BPM</button>
+                </div>
               
-              <div id="80" class="tabcontent">
-                <h3>below 80 BPM</h3>
-                <p>Genres below 80 BPM include dubstep, trap, and future bass.</p>
-              </div>
+                <div id="80" class="tabcontent">
+                    <h3>Below 80 BPM</h3>
+                    <p>Genres below 80 BPM include dubstep, trap, and future bass.</p>
+                </div>
               
-              <div id="80120" class="tabcontent">
-                <h3>between 80 and 120 BPM</h3>
-                <p> Genres between 80 and 120 BPM include house, trance, house, glitch hop, future bass, halftime drum and bass, and drumstep.</p>
-              </div>
+                <div id="80120" class="tabcontent">
+                    <h3>Between 80 and 120 BPM</h3>
+                    <p>Genres between 80 and 120 BPM include house, trance, house, glitch hop, future bass, halftime drum and bass, and drumstep.</p>
+                </div>
               
-              <div id="120170" class="tabcontent">
-                <h3>Between 120 and 170 BPM</h3>
-                <p>Between 120 and 170 BPM are trance, house, hardstyle, and garage.</p>
-              </div>
+                <div id="120170" class="tabcontent">
+                    <h3>Between 120 and 170 BPM</h3>
+                    <p>Between 120 and 170 BPM are trance, house, hardstyle, and garage.</p>
+                </div>
 
-              <div id="170" class="tabcontent">
-                <h3>above 170 BPM</h3>
-                <p>above 170 BPM are hardcore techno, jungle, drum and bass.</p>
-              </div>
-            <div id="background"></div>
-            <script>function openCity(evt, cityName) {
+                <div id="170" class="tabcontent">
+                    <h3>Above 170 BPM</h3>
+                    <p>Above 170 BPM are hardcore techno, jungle, drum, and bass.</p>
+                </div>
+
+                <script>function openCity(evt, cityName) {
                 // Declare all variables
                 var i, tabcontent, tablinks;
               
@@ -83,8 +84,8 @@
                 // Show the current tab, and add an "active" class to the link that opened the tab
                 document.getElementById(cityName).style.display = "block";
                 evt.currentTarget.className += " active";
-              }</script>
-            
+                }</script>
+            </section>
         </main>
         <footer>
             <h3>EDM 101 &copy; 2022 - Byeongho Kim</h3>

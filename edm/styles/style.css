@@ -5,6 +5,9 @@
 #edm-msg h1 {
     text-align: center;
     color: white;
+    font-family: Calibri, Candara, 'Gill Sans';
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 #edm-msg h4 {
@@ -63,12 +66,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
-.home-title {
-    color: #ffd60a;
-    font-family: Calibri, Candara, 'Gill Sans';
-    font-size: 2em;
-    margin-top: 10px;
-}
+
 body {
     background-color: #15ba46;
     font-family: Candara, Helvetica, Verdana;
@@ -136,45 +134,102 @@ footer .social img {
     padding-top: 15px;
 }
 
+/*what-is-edm page */
+
+.what-title {
+    color: #ffd60a;
+    font-family: Calibri, Candara, 'Gill Sans';
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #000814;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#what-img {
+    width: 100%;
+    height: 500px;
+}
+
+#what-msg {
+    font-family: Candara, Helvetica, Verdana;
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+    color: #000814;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    background-color: #ffd60a;
+    border-radius: 20px;
+    padding: 20px;
+}
+.what-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3em;
+    background-color: #ffd60a;
+    padding: 30px;
+    border-radius: 20px;
+}
+#genres-img {
+    width: 100%;
+    grid-column: 1/2;
+    border-radius: 20px;
+}
+
+#chart {
+    grid-column: 2/3;
+    padding-left: 30px;
+}
+
 /* Style the tab */
 .tab {
     float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 30%;
-    height: 300px;
+    width: 100%;
+    margin-top: 70px;
+    border-radius: 20px;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
     display: block;
-    background-color: inherit;
+    background-color: #15ba46;
     color: black;
     padding: 22px 16px;
     width: 100%;
-    border: none;
+    border: outset;
     outline: none;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
+    font-size: 23px;
+    border-radius: 20px;
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #ddd;
+    background-color: #1e7438;
   }
   
   /* Create an active/current "tab button" class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: #1e7438;
+    color: white;
   }
   
   /* Style the tab content */
   .tabcontent {
     float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
     display: none;
+    margin-top: 60px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 25px;
+  }
+  .tabcontent h3{
+    font-family: Calibri, Candara, 'Gill Sans';
   }
