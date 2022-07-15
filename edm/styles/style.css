@@ -136,7 +136,7 @@ footer .social img {
 
 /*what-is-edm page */
 
-.what-title {
+.title {
     color: #ffd60a;
     font-family: Calibri, Candara, 'Gill Sans';
     font-size: 2em;
@@ -234,3 +234,74 @@ footer .social img {
   .tabcontent h3{
     font-family: Calibri, Candara, 'Gill Sans';
   }
+
+  /* Famous Festivals */
+
+
+.card {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+    border-style: solid;
+    overflow: scroll;
+    height: 700px;
+}
+
+.image-one {
+    grid-column: 1/2;
+    width: 90%;
+    height: 700px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.msg-one {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #ffd60a;
+    border-radius: 30px;
+    
+}
+.msg-one h2 {
+    font-family: Calibri, Candara, 'Gill Sans';
+    color: #000814;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.msg-one p {
+    font-family: Candara, Helvetica, Verdana;
+    font-size: 30px;
+    margin-top: 150px;
+    color: #000814;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.image-two {
+    grid-column: 1/2;
+    width: 90%;
+    height: 700px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.msg-two {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #ffd60a;
+    border-radius: 30px;
+    
+}
+.msg-two h2 {
+    font-family: Calibri, Candara, 'Gill Sans';
+    color: #000814;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.msg-two p {
+    font-family: Candara, Helvetica, Verdana;
+    font-size: 30px;
+    margin-top: 150px;
+    color: #000814;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
